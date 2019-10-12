@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+    <html>
+      <head>
+        <title>Form</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+		    <link href="../resources/css/my_style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> -->
+        <!-- the line below is the plugin fo hding and showing button contents -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <!-- link the css form -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <link href="../resources/css/form.css" rel="stylesheet">
+      </head>
+      <body style="margin:30px;">
+        <h1 > Add New Article </h1>
+          <form>
+            <div class="form-group">
+                <label for="atricleTitle"><font size="5">Atrilce Title</font></label>
+                <input type="text" class="form-control" id="atricleTitle" aria-describedby="ArticleTitleHelp" placeholder="Title">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1"><font size="5">Author Name</font></label>
+                <input type="text" class="form-control" id="atricleTitle" aria-describedby="AuthorNa,eHelp" placeholder="Title">
+            </div>
+            <!-- Using grid system to put these 2 things in same row -->
+            <div class="row">
+                <div class = "col-sm-6">
+                    <p><font size="5">Upload Files:</font></p>
+                    <input type="file" id="myFile" name="filename2">
+                </div>
+                <div class = "col-sm-6">
+                    <div class="form-group" id="PageDropDown">
+                        <label for="sel1"><font size="5">Pages:</font></label>
+                        <select class="form-control" id="sel1">
+                            <option>page 1</option>
+                            <option>page 2</option>
+                            <option>page 3</option>
+                            <option>page 4</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label> <font size="5">Article Text</font></label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="10" id="atricleTitle" aria-describedby="ArticleTextHelp"></textarea>
+            </div>
+            <div class="row">
+                <div class= col-sm-6>
+                    <p> <font size="5"> Select Tags </font> </p>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">Python</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <label class="form-check-label" for="inlineCheckbox2">C++</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                        <label class="form-check-label" for="inlineCheckbox3">Java</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <label class="form-check-label" for="inlineCheckbox2">Scala</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                        <label class="form-check-label" for="inlineCheckbox3">Perl</label>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                <p> <font size="5"> Visibility </font> </p>
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                  <label class="btn btn-secondary active">
+                    <input type="radio" name="options" id="option1" autocomplete="Public" checked> Public
+                  </label>
+                  <label class="btn btn-secondary">
+                    <input type="radio" name="options" id="option2" autocomplete="Private"> Private
+                  </label>
+                </div>
+                </div>
+            </div>
+            <br>
+            <p> <font size="5"> Login to Finish Submitting </font> </p>
+            <div class="row">
+                <div class= col-sm-6>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="atricleTitle" aria-describedby="AuthorNa,eHelp" placeholder="Username">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <input type="Password" class="form-control" id="atricleTitle" aria-describedby="AuthorNa,eHelp" placeholder="Password">
+                </div>
+            </div>
+            <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                        <label class="form-check-label" for="inlineCheckbox3">Remember me</label>
+            </div>
+            <br>
+            <br>
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Submit</button>
+          </form>
+      </body>
+    </html>

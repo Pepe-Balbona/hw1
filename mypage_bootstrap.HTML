@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+    <html>
+      <head>
+        <title>About Me</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+		    <link href="../resources/css/my_style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <!-- the line below is the plugin fo hding and showing button contents -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+      </head>
+      <body style="margin:10px;">
+        <div class="containter">
+<!-- need help changing the font of heading -->
+          <h2 class="display-5" class = "font-wieght-light">Balbona, Pepe - <small calss = "font-weight-lighter" class = "text-muted">Software Development Tools and Methods </small></h2>
+        </div>
+        <div class="card bg-light text-dark">
+          <div class="card-body">I enjoy playing soccer, skiing, and coding.  I am studying computer science because there are many cool fields of study relating to it.</div>
+        </div>
+        <h2> My Professional Profile </h2>
+        <button type="button" class="btn btn-outline-light text-dark btn-lg">
+          <a href = https://github.com/Pepe-Balbona> Pepe's GitHub </a>
+        </button>
+        <br></br>
+        <img src="IMG_2977.jpg" alt="Pepe" class = "rounded-circle" style="Top:200px;width:300px;height:300px;">
+        <br></br>
+        <h3>My Favorite Projects</h3>
+        <table class="table table-bordered table-dark" id="projects_table">
+        	<tr>
+        		<th> Name of the Project </th>
+        		<th> Technolgies Used </th>
+        	</tr>
+        	<tr>
+        		<td> SoccerGame </td>
+        		<td> C++ </td>
+        	</tr>
+        	<tr>
+        		<td> Find N words</td>
+        		<td> Python </td>
+        	</tr>
+        	<tr>
+        		<td> Oregon Trail</td>
+        		<td> C++ </td>
+        	</tr>
+        </table>
+        <div class = "card bg-light text-dark">
+          <div class="card-body">
+            <div class="col-sm-6">
+              <a class="btn btn-outline-secondary text-dark btn-lg " data-toggle="collapse" href="#travel" role="button" aria-expanded="false" aria-controls="travel">
+              <u>Travel</u> </a>
+              <div class="collapse" id="travel">
+                <div class="card card-body">
+                  Mexico
+                  <br></br>
+                  China
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <button class="btn btn-outline-secondary text-dark btn-lg" type="button" data-toggle="collapse" data-target="#Interests" aria-expanded="false" aria-controls="Interests">
+              <u>Interests</u>
+              </button>
+              <div class="collapse card card-body" id="Interests">
+                  Soccer
+                  <br></br>
+                  Skiing
+                  <br></br>
+                  Fantasy Football
+              </div>
+            </div>
+          </div>
+        </div>
+        <br></br>
+        <div class="col-sm-4">
+          <div class="container" align = "left">
+      <!-- Trigger the modal with a button -->
+            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Click Me!</button>
+          </div>
+        </div>
+      <!-- Modal -->
+        <div class="modal" id="myModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Thats all folks</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>peace out.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      </body>
+    </html>
